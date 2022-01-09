@@ -55,7 +55,7 @@ func TestCase4(t *testing.T) {
 	storey5.press(5)
 	storey2.press(2)
 	//time.Sleep(time.Duration(1) * time.Second) //电梯运行一层一秒
-	elevator.goRun(storey4, storey5, storey2)
+	elevator.goRun(storey4, storey4, storey5, storey2)
 	floorOfElevator := elevator.getElevatorFloor()
 	if floorOfElevator != 2 {
 		t.Fatalf("预期电梯2楼，但得到的是:%d,", floorOfElevator)
