@@ -49,6 +49,7 @@ func (e *elevator) goRun(s1 *storey, s2 ...*storey) {
 	var direction int //(定义电梯运行的方向 1为上 0为下)
 	var up []int
 	var down []int
+	//判断电梯上还是下
 	if s1.number > e.nowFloor {
 		//sub = s1.number - e.nowFloor
 		//time.Sleep(time.Duration(sub) * time.Second) //电梯运行一层一秒
