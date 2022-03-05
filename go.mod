@@ -9,15 +9,17 @@ require (
 )
 
 require (
+	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/inconshreveable/mousetrap v1.0.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+	google.golang.org/protobuf v1.27.1 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 
 )
 
 replace learn.go.tools => ../learn.go.tools //本地的包模块需要去使用
-replace (
-	github.com/armstrongli/go-bmi => ./staging/src/github.com/armstrongli/go-bmi
-)
+
+replace github.com/armstrongli/go-bmi => ./staging/src/github.com/armstrongli/go-bmi
 
 //replace (
 //	github.com/spf13/cobra =>github.com/spf13/cobra v1.2.0
