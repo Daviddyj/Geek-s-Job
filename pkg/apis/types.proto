@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package apis;
+
+message PersonalInformationList {
+  repeated PersonInformation items = 1;
+}
+
+
+message PersonInformation {
+  // @gotags: gorm:"primaryKey;column:id"
+  int64 id =1;
+   // @gotags: gorm:"column:person_id"
+  int64 person_id = 2;
+  // @gotags: gorm:"column:personal_name"
+  string personal_name =3;
+  // @gotags: gorm:"column:content"
+  string content =4;
+  // @gotags: gorm:"column:show_time"
+  string show_time =5;
+  // @gotags: gorm:"column:by_time_age"
+  int64 by_time_age =6;
+  // @gotags: gorm:"column:by_time_height"
+  float by_time_height =7;
+  // @gotags: gorm:"column:by_time_weight"
+  float by_time_weight =8;
+  // @gotags: gorm:"column:by_time_fatrate"
+  float by_time_fatrate =9;
+  // @gotags: gorm:"column:personal_sex"
+  string personal_sex =10;
+  // @gotags: gorm:"column:visiable"
+  bool visiable =11;
+
+
+}
